@@ -6,7 +6,7 @@
 body{
 	background-color: #333333;
 }
-#spinner{
+.spinner{
 	position: absolute;
 	left: 47%;
 	top: 47%;
