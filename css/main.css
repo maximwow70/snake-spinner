@@ -1,0 +1,97 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+	background-color: #333333;
+}
+#spinner{
+	position: absolute;
+	left: 47%;
+	top: 47%;
+	transform: translateX(-50%) translateY(-50%);
+
+}
+.spinners{
+	position: absolute;
+	/*top и left подбирать нужно*/
+	content: "";
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #00bcd4;
+	
+}
+#spinner-one{
+	margin-left: -50px;
+
+	animation: spinny-one 1s linear infinite;
+}
+#spinner-two{
+	animation: spinny-two 1s linear infinite;
+}
+#spinner-three{
+	margin-left: 50px;
+	
+	width: 35px;
+	height: 35px;
+	background-color: #df2151;
+	animation: spinny-three 1s linear infinite;
+}
+@keyframes spinny-one{
+	0%{
+		transform: translateY(10px);
+		
+	}
+	25%{
+		transform: translateY(0px) ;
+		
+	}
+	50%{
+		transform: translateY(-10px);
+		
+	}
+	75%{
+		transform: translateY(0px) ;
+		
+	}
+	100%{
+		transform: translateY(10px);
+	}
+}
+@keyframes spinny-two{
+	0%{
+		transform: translateY(0px) ;
+	}
+	25%{
+		transform: translateY(-10px) ;
+	}
+	50%{
+		transform: translateY(0px) ;
+	}
+	75%{
+		transform: translateY(10px) ;
+	}
+	100%{
+		transform: translateY(0px) ;
+	}
+}
+@keyframes spinny-three{
+	0%{
+		transform: translateY(-10px);
+	}
+	25%{
+		transform: translateY(0px) ;
+	}
+	50%{
+		transform: translateY(10px) ;
+	}
+	75%{
+		transform: translateY(0px) ;
+	}
+	100%{
+		transform: translateY(-10px) ;
+	}
+}
